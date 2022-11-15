@@ -1,0 +1,29 @@
+.contact {
+    background-color: #ffa61e;
+    width: 100%;
+    margin: 0px auto;
+    padding: 18px 16px;
+    border-radius: 10px;
+    margin: 10px 0;
+    color: white;
+    width:230px;
+    height:120px;
+    box-sizing: border-box;
+  }
+
+  .contact_image{
+    width: 30px;
+    height: 30px;
+    color: #d5fcff;
+  }
+h1{
+    font-size: 18px;
+    text-align: left;
+    margin: 5px 0;
+}
+p{
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 4px;
+
+}
