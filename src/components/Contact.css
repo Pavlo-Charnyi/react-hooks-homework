@@ -1,5 +1,5 @@
 .contact {
-    background-color: #ffa61e;
+    background-color: #02abfd;
     width: 100%;
     margin: 0px auto;
     padding: 18px 16px;
@@ -10,6 +10,15 @@
     height:120px;
     box-sizing: border-box;
   }
+  .contact:nth-child(2n+0){
+    background-color: #ff4548;
+  }
+  .contact:nth-child(3n+0){
+    background-color: #ffa61e;
+
+  }
+
+
 
   .contact_image{
     width: 30px;
@@ -25,5 +34,4 @@ p{
     font-size: 16px;
     text-align: left;
     margin-bottom: 4px;
-
 }
