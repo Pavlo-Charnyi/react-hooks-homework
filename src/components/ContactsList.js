@@ -13,10 +13,12 @@ function ContactsList() {
   });
 
   const enableGenders = (event) => {
-    gendersToShow[event.target.name] = !gendersToShow[event.target.name];
-    setgendersToShow({
-      ...gendersToShow,
-    });
+    const gender = event.target.name
+
+    setgendersToShow( prevState => ({
+      ...prevState,
+      [gender]: !prevState[gender]
+    }));
   };
 
   const handleSearchChange = (event) => {
@@ -34,28 +36,24 @@ function ContactsList() {
       }
     })
     .filter((el) => {
-      const [
-        firstNameLowerCase,
-        lastNameLowerCase,
-        phone,
-        searchValueLowerCase,
-      ] = [
+
+/*       searchValue.toLowerCase() можна зберегти в окрему змінну, тоді можна не деструктурувати firstNameLowerCase, lastNameLowerCase, phone, а просто перенезвати на userData і зберігати поточні дані як зараз є (крім останнього searchValue.toLowerCase()), тоді dataArray можна буде видалити і юзати userData. */
+
+      const [firstNameLowerCase, lastNameLowerCase, phone, searchValueLowerCase] = [
         el.firstName.toLowerCase(),
         el.lastName.toLowerCase(),
         el.phone,
-        searchValue.toLowerCase(),
-      ];
+        searchValue.toLowerCase()];
+
       const dataArray = [];
       dataArray.push(firstNameLowerCase, lastNameLowerCase, phone);
 
-      return dataArray.filter((item) => item.includes(searchValueLowerCase))
-        .length > 0 || searchValue === ''
-        ? el
-        : '';
+      return dataArray.filter((item) => item.includes(searchValueLowerCase)).length > 0 || searchValue === '' ? el : '';
     });
+
   return (
-    <div className="contacts-list">
-      <div className="search-field-container">
+    <div className='mainContainer'>
+            <div className="search-field-container">
         <img src={SearchIcon} alt="SearchIcon" className="img__search" />
         <input
           type="text"
@@ -95,8 +93,9 @@ function ContactsList() {
           />
         </fieldset>
       </div>
-
-      <Contact contacts={filteredArray} />
+      <div className="contacts-list">
+        <Contact contacts={filteredArray} />
+      </div>
     </div>
   );
 }
