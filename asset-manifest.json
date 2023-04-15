@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react-hooks-homework/static/css/main.ddbbb158.css",
+    "main.css": "/react-hooks-homework/static/css/main.1b895523.css",
     "main.js": "/react-hooks-homework/static/js/main.b215cb83.js",
     "static/media/UnknownGender.png": "/react-hooks-homework/static/media/UnknownGender.5bf3d50bab942e21f46a.png",
     "static/media/MaleIcon.svg": "/react-hooks-homework/static/media/MaleIcon.475f1af8eb8578a7211940a214e1a191.svg",
     "index.html": "/react-hooks-homework/index.html",
     "static/media/SearchIcon.svg": "/react-hooks-homework/static/media/SearchIcon.6943d2fa8a2b5cf20c735ddb7df6b281.svg",
-    "main.ddbbb158.css.map": "/react-hooks-homework/static/css/main.ddbbb158.css.map",
+    "main.1b895523.css.map": "/react-hooks-homework/static/css/main.1b895523.css.map",
     "main.b215cb83.js.map": "/react-hooks-homework/static/js/main.b215cb83.js.map"
   },
   "entrypoints": [
-    "static/css/main.ddbbb158.css",
+    "static/css/main.1b895523.css",
     "static/js/main.b215cb83.js"
   ]
 }
